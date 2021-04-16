@@ -1,0 +1,153 @@
+import java.util.Collections;
+import java.util.Vector;
+
+public class Bucket {
+	 void bucketSort(float brr[])
+	 {
+	 int n = brr.length;
+        if (n <= 0)
+            return;
+ 
+        // 1) Create n empty buckets
+        @SuppressWarnings("unchecked")
+        Vector<Float>[] buckets = new Vector[n];
+ 
+        for (int i = 0; i < n; i++) {
+            buckets[i] = new Vector<Float>();
+        }
+ 
+        // 2) Put array elements in different buckets
+        for (int i = 0; i < n; i++) {
+            float idx = brr[i] * n;
+            buckets[(int)idx].add(brr[i]);
+        }
+ 
+        // 3) Sort individual buckets
+        for (int i = 0; i < n; i++) {
+            Collections.sort(buckets[i]);
+        }
+ 
+        // 4) Concatenate all buckets into arr[]
+        int index = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < buckets[i].size(); j++) {
+                brr[index++] = buckets[i].get(j);
+            }
+        }
+        System.out.println("Sorted array is ");
+        for (float el : brr) {
+            System.out.print(el + " ");
+     
+        
+        }
+        
+        
+    }
+	 
+
+	 
+	 
+
+}
+import java.util.Collections;
+import java.util.Vector;
+
+public class Bucket {
+	 void bucketSort(float brr[])
+	 {
+	 int n = brr.length;
+        if (n <= 0)
+            return;
+ 
+        // 1) Create n empty buckets
+        @SuppressWarnings("unchecked")
+        Vector<Float>[] buckets = new Vector[n];
+ 
+        for (int i = 0; i < n; i++) {
+            buckets[i] = new Vector<Float>();
+        }
+ 
+        // 2) Put array elements in different buckets
+        for (int i = 0; i < n; i++) {
+            float idx = brr[i] * n;
+            buckets[(int)idx].add(brr[i]);
+        }
+ 
+        // 3) Sort individual buckets
+        for (int i = 0; i < n; i++) {
+            Collections.sort(buckets[i]);
+        }
+ 
+        // 4) Concatenate all buckets into arr[]
+        int index = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < buckets[i].size(); j++) {
+                brr[index++] = buckets[i].get(j);
+      import java.util.Collections;
+import java.util.Vector;
+
+public class Bucket {
+	 void bucketSort(float brr[])
+	 {
+	 int n = brr.length;
+        if (n <= 0)
+            return;
+ 
+        // 1) Create n empty buckets
+        @SuppressWarnings("unchecked")
+        Vector<Float>[] buckets = new Vector[n];
+ 
+        for (int i = 0; i < n; i++) {
+            buckets[i] = new Vector<Float>();
+        }
+ 
+        // 2) Put array elements in different buckets
+        for (int i = 0; i < n; i++) {
+            float idx = brr[i] * n;
+            buckets[(int)idx].add(brr[i]);
+        }
+ 
+        // 3) Sort individual buckets
+        for (int i = 0; i < n; i++) {
+            Collections.sort(buckets[i]);
+        }
+ 
+        // 4) Concatenate all buckets into arr[]
+        int index = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < buckets[i].size(); j++) {
+                brr[index++] = buckets[i].get(j);
+            }
+        }
+        System.out.println("Sorted array is ");
+        for (float el : brr) {
+            System.out.print(el + " ");
+     
+        
+        }
+        
+        
+    }
+	 
+
+	 
+	 
+
+}
+      }
+        }
+        System.out.println("Sorted array is ");
+        for (float el : brr) {
+            System.out.print(el + " ");
+     
+        
+        }
+        
+        
+    }
+	 
+
+	 
+	 
+
+}
