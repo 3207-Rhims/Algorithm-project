@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Input {
+    int num, i ,j;
+    float k; 
+    Scanner input = new Scanner(System.in);
+    
+    public int[] Sort_input() {
+    	
+    	System.out.println("Enter how many number you want to insert");
+    	num = input.nextInt();
+    	int arr[]=new int[num];
+    	System.out.println("Enter"+ num+"numbers");
+    	
+    	for (i=0; i<num; i++) {
+    		arr[i]=input.nextInt();
+    	}
+    	
+    	return arr;
+    }
+    
+    public float[] bcketSort()
+    {
+    	
+    	System.out.println("Enter how many number you want to insert");
+    	num = input.nextInt();
+    	float brr[]=new float[num];
+    	System.out.println("Enter"+ num+"numbers");
+    	for (i=0; i<num; i++) {
+    		brr[i]=input.nextInt();
+    	}
+    	
+    	return brr;
+    }
+    public int[] Sort_inp(int crr[],int b) {
+    	
+    	System.out.println("Enter how many number you want to insert");
+    	num = input.nextInt();
+    	int arr[]=new int[num];
+    	System.out.println("Enter"+ num+"numbers");
+    	
+    	for (i=0; i<num; i++) {
+    		arr[i]=input.nextInt();
+    	}
+    	
+    	return  Sort_inp(arr,num);
+    }
+    	
+    
+}
